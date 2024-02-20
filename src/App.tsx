@@ -14,10 +14,10 @@ function App() {
         setSelectedPage(SelectedPage.Home);
       }
       if(window.scrollY!==0){
-        setIsTopOfPage(false)
+        setIsTopOfPage(false);
       }
     }
-    window.addEventListener("croll", handleScroll)
+    window.addEventListener("scroll", handleScroll)
     return ()=> window.removeEventListener("scroll", handleScroll)
   }, [])
   
